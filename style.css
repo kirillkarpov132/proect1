@@ -1,5 +1,37 @@
+*{
+    box-sizing: border-box;
+  }
 body{
     margin: 0px;
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: local('Roboto');
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+  
+  
+  @font-face {
+    font-family: 'Roboto!';
+    src: local('Roboto');
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    }
+p{
+    font-family: 'Roboto!';
+}
+a{
+    font-family: 'Roboto!';
 }
 header{
     width: 1920px;
@@ -44,7 +76,7 @@ margin-right: 190px;
 }
 .section1{
     width: 280px;
-    height: 50px;
+    height: 48px;
     border-right: 2px solid white;
     display: flex;
 }
@@ -111,17 +143,73 @@ color: white;
     width:1920px;
     height: 700px;
     background: rgb(250, 204, 2);
+    display: flex;
+    position: relative;
+}
+.info{
+    padding-left:250px ;
+    padding-top: 150px;
 }
 .info1{
     display: flex;
-    padding-left:250px ;
 }
 .infotext{
     margin:0;
-font-size: 60px;
+font-size: 90px;
+font-weight: 900;
+color: rgb(23, 87, 10);
+margin-right: 60px;
 }
 .star{
-    width: 214px;
-    height: 194px;
+    width: 140px;
+    height: 130px;
     background: url(/image/Star\ 1.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skidka{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    
+}
+.info2{
+    width: 970px;
+}
+.infotext2{
+    font-size: 20px;
+    color: rgb(23, 87, 10);
+}
+.button{
+    width: 340px;
+    height: 65px;
+    border: 0;
+    border-radius: 15px;
+    background: rgb(190, 200, 177);
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 40px;
+    display: flex;
+}
+.button:hover{
+    cursor: pointer;
+}
+.button a{
+    margin: 15px 0px 0px 0px;
+    margin-right:130px;
+    color: rgb(23, 87, 10);
+    text-decoration: none;
+}
+.button img{
+  position: relative;
+   top: 10px;
+}
+.imgwat{
+    background: url(/image/watermelon.png);
+    width: 640px;
+    height: 480px;
+    position: absolute; 
+right: 0;
+bottom: 0;
 }

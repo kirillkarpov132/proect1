@@ -83,7 +83,7 @@ section {
     height: 124px;
     background-color: #181818;
     box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.06);
-   display: flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     margin: auto 0;
@@ -331,3 +331,70 @@ margin-right: 60px;
 right: 0;
 bottom: 0;
 }
+.footer{
+  width: 1900px;
+  height: 300px;
+  background: #181818;
+  margin: auto;
+  border-radius:40px 40px 0 0 ;
+  padding-top: 40px;
+  padding-left: 160px;
+}
+.kontakt_compania{
+width: 280px;
+height: 220px;
+}
+.kontakt_compania_logo{
+margin-bottom: 20px;
+}
+.kontakt_compania_mobil{
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.world{
+color: rgb(175, 176, 177);
+font-size: 12px;
+margin-bottom: 20px;
+}
+.kontakt_compania_telefon{
+width: 20px;
+margin-right: 10px;
+}
+.kontakt_compania_number{
+color: #fff;
+font-weight: 700;
+font-family: 'Roboto!';
+}
+.kontakt_compania_location_img{
+margin-right: 4px;
+}
+.kontakt_compania_location_text{
+color: #848884f3;
+font-family: 'Roboto!';
+font-size: 13px;
+}
+.kontakt_compania_location{
+margin-bottom: 15px;
+}
+.kontakt_compania_gmail_img{
+  margin-right: 4px;
+  }
+  .kontakt_compania_gmail_text{
+  color: #848884f3;
+  font-family: 'Roboto!';
+  font-size: 13px;
+  }
+.kontakt_compania_location_text:hover{
+  color: #ffffff;
+  font-family: 'Roboto!';
+  font-size: 13px;
+  }
+  .kontakt_compania_gmail_text:hover{
+    color: #ffffff;
+    font-family: 'Roboto!';
+    font-size: 13px;
+    }
+    .message img{
+      margin-right: 8px;
+    }

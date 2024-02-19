@@ -3,6 +3,7 @@
   }
 body{
     margin: 0px;
+
 }
 
 @font-face {
@@ -67,35 +68,27 @@ a{
 }
 header{
     width: 1920px;
-    margin: auto;
     background-color: green;
     height: 124px;  
 }
-
-
-section {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .header {
+.header {
     width: 100%;
     height: 124px;
     background-color: #181818;
     box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.06);
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin: auto 0;
+   
   }
   .header-title {
     display: flex;
     align-items: center;
-    padding-top: 42px;
     padding-left: 60px;
   }
   .conteiner {
     max-width: 1850px;
+    display: flex;
+
   }
   .vec {
     width: 9px;
@@ -172,7 +165,7 @@ section {
     gap: 14px;
   }
   .tel {
-    color: var(--white, #46a308);
+    color: var(--white, #037e17);
     font-size: 22px;
     font-weight: bold;
     
@@ -254,6 +247,9 @@ section {
   display: flex;
   align-items: center;
 }
+.main{
+  margin-bottom: 100px;
+}
 .fon{
     margin: auto;
     width:1920px;
@@ -261,6 +257,7 @@ section {
     background: rgb(250, 204, 2);
     display: flex;
     position: relative;
+    margin-bottom: 100px;
 }
 .info{
     padding-left:250px ;
@@ -331,18 +328,53 @@ margin-right: 60px;
 right: 0;
 bottom: 0;
 }
+.section{
+  width: 1420px;
+  margin: auto;
+ 
+}
+.section_info_compania{
+  font-size: 30px;
+  font-family: 'Roboto!';
+  margin-bottom: 40px;
+}
+
+.section_info_compania_block{
+  width: 900px;
+  margin-right: 100px;
+}
+.section_compania_block{
+  display: flex;
+}
+.apple{
+  width: 300px;
+}
+
+.section_info_compania_text{
+  font-family: 'Roboto!';
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 .footer{
   width: 1900px;
   height: 300px;
   background: #181818;
   margin: auto;
   border-radius:40px 40px 0 0 ;
-  padding-top: 40px;
-  padding-left: 160px;
+  padding-top: 60px;
+  padding-left: 460px;
 }
 .kontakt_compania{
 width: 280px;
 height: 220px;
+margin-right: 80px;
 }
 .kontakt_compania_logo{
 margin-bottom: 20px;
@@ -379,22 +411,84 @@ margin-bottom: 15px;
 }
 .kontakt_compania_gmail_img{
   margin-right: 4px;
-  }
-  .kontakt_compania_gmail_text{
-  color: #848884f3;
-  font-family: 'Roboto!';
-  font-size: 13px;
-  }
+}
+.kontakt_compania_gmail_text{
+color: #848884f3;
+font-family: 'Roboto!';
+font-size: 13px;
+}
 .kontakt_compania_location_text:hover{
-  color: #ffffff;
+color: #ffffff;
+font-family: 'Roboto!';
+font-size: 13px;
+}
+.kontakt_compania_gmail_text:hover{
+color: #ffffff;
+font-family: 'Roboto!';
+font-size: 13px;
+}
+.message img{
+margin-right: 8px;
+}
+.reservation{
+  width: 220px;
+  margin-right: 150px;
+}
+.reservation_title{
+color: #fff;
+font-family: 'Roboto!';
+margin-bottom: 3px;
+}
+.reservation_text{
+  color: #969696;
+  font-size: 9px;
   font-family: 'Roboto!';
-  font-size: 13px;
-  }
-  .kontakt_compania_gmail_text:hover{
-    color: #ffffff;
-    font-family: 'Roboto!';
-    font-size: 13px;
-    }
-    .message img{
-      margin-right: 8px;
-    }
+  margin-bottom: 20px;
+}
+.reservation_input1{
+width:220px ;
+margin-bottom: 10px;
+outline: none;
+padding: 5px;
+font-size: 14px;
+border-radius: 8px;
+background: #f5f2f2;
+border-color: #fff;
+}
+.reservation_button{
+width: 220px;
+padding: 8px 0 8px 0;
+border-radius: 8px;
+background: #e24242;
+font-family: 'Roboto!';
+color: #fff;
+font-size: 700;
+}
+.reservation_button:hover{
+  background: #df1111;
+  transition: 0.4s; 
+  cursor: pointer;
+}
+.info_compania_text{
+  display: flex;
+}
+.info_compania_title{
+  color:#fff;
+  font-family: 'Roboto!';
+  margin-bottom: 20px;
+}
+.info_compania_a{
+  display: flex;
+  margin-bottom: 10px;
+  color: #969696;
+}
+.info_compania_a:hover{
+  color: #ffffff;
+}
+.info_compania_text1{
+  margin-right: 40px;
+}
+.line{
+  border-width: 1px;
+  border-color: #85858575;
+}

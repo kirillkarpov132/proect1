@@ -1,9 +1,9 @@
 *{
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
   }
 body{
     margin: 0px;
-
 }
 
 @font-face {
@@ -50,14 +50,15 @@ left: 0;
 bottom: -2px;
 transform: scaleX(0);
 }
+
 .nav a:hover:before{
   transform: scaleX(1);
   transition: 0.25s;
   }
 
-.glavnia{
+.katalog{
   border-bottom: 2px solid #117ed8;
-  padding: 2px;
+  padding: 2px;   
 }
 
 p{
@@ -67,7 +68,7 @@ a{
     font-family: 'Roboto!';
 }
 header{
- 
+    
 }
 .header {
     width: 100%;
@@ -75,7 +76,7 @@ header{
     background-color: #181818;
     display: flex;
     justify-content: center;
-  
+    margin-bottom: 100px;
   }
   .header-title {
     display: flex;
@@ -244,115 +245,190 @@ header{
   display: flex;
   align-items: center;
 }
+
+
+
+
+
 .main{
-  margin-bottom: 100px;
+
+  width: 1920px;
+  margin: 0 auto ;
 }
-.fon{
-    margin: auto;
-    width:1920px;
-    height: 700px;
-    background: rgb(250, 204, 2);
-    display: flex;
-    position: relative;
-    margin-bottom: 100px;
+
+.shopstart{
+    color: #0A490A;
+    margin-left: 85px;
+    font-size: 30px;
+    font-weight: 700;
 }
+.tovars{
+    display: inline-flex;
+    flex-wrap: wrap;
+   margin-bottom: 100px;
+}
+.tovar1{
+    margin-top: 20px;
+    border-style:groove;
+    border-width: 2px;
+    border-color: black;
+    width: 275px;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 85px;
+    margin-right: -65px;
+}
+.tovar2{
+    border-style:groove;
+    border-width: 2px;
+    border-color: black;
+    width: 275px;
+    height: 425px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.apple{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.fruitp, .fruitname{
+    color:#0A490A;
+    margin-left: 15px;
+}
+.fruitname{
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.fruitp{
+    margin-bottom: 3px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+.price{
+    margin-left: 15px;
+    color: #0A490A;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.pricespan{
+    font-size: 16px;
+    text-decoration:line-through;
+    margin-bottom: 0;
+}
+.kg{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 25px;
+    border-radius: 7px;
+    border-width: 1px;
+}
+.kg::placeholder{
+    padding-left: 130px;
+    font-weight: 700;
+}
+
+.buttonbox{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.buttonmore{
+    height: 30px;
+    width: 255px;
+    font-size: 15px;
+    color: #0A490A;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.linkmore{
+    text-decoration: none;
+}
+.buttonmore:hover{
+    background-color: gray;
+}
+
 .info{
-    padding-left:250px ;
-    padding-top: 150px;
+    color: #0A490A;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-right: 15px;
 }
-.info1{
+.under{
+background-color: #0A490A;
+width: 100%;
+height: 400px;
+margin-top: 50px;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup_body{
     display: flex;
-    margin-bottom: 50px;
-}
-.infotext{
-    margin:0;
-font-size: 90px;
-font-weight: 900;
-color: rgb(23, 87, 10);
-margin-right: 60px;
-}
-.star{
-    width: 140px;
-    height: 130px;
-    background: url(/image/Star\ 1.png) center/cover no-repeat;
-    display: flex;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
 }
-.skidka{
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    
+.popup_content{
+    background-color: white;
+    color: #0A490A;
+    max-width: 700px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
 }
-.info2{
-    width: 970px;
+.popup_title{
+    font-size: 30px;
+    margin-bottom: 10px;
 }
-.infotext2{
-    font-size: 20px;
-    color: rgb(23, 87, 10);
-    margin-bottom: 50px;
-}
-.button{
-    width: 340px;
-    height: 65px;
-    border: 0;
-    border-radius: 15px;
-    background: rgb(190, 200, 177);
-    font-size: 25px;
-    font-weight: 600;
-    padding-left: 40px;
-    display: flex;
-}
-.button:hover{
-    cursor: pointer;
-}
-.button a{
-    margin: 15px 0px 0px 0px;
-    margin-right:130px;
-    color: rgb(23, 87, 10);
+.popup_close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
     text-decoration: none;
+    font-size: 20px;
+    color: #0A490A;
 }
-.button img{
-  position: relative;
-   top: 10px;
+.popup:target{
+    opacity: 1;
+    visibility: visible;
 }
-.imgwat{
-    background: url(/image/watermelon.png);
-    width: 640px;
-    height: 480px;
-    position: absolute; 
-right: 0;
-bottom: 0;
+.popup:target .popup_content{
+    opacity: 1;
+    transform: translate(0px,0px);
 }
-.section{
-  width: 1420px;
-  margin: auto;
- 
+.popup_area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
-.section_info_compania{
-  font-size: 30px;
-  font-family: 'Roboto!';
-  margin-bottom: 40px;
+.fix{
+    position: fixed;
+    opacity: 0;
 }
-
-.section_info_compania_block{
-  width: 900px;
-  margin-right: 100px;
-}
-.section_compania_block{
-  display: flex;
-}
-.apple{
-  width: 300px;
-}
-
-.section_info_compania_text{
-  font-family: 'Roboto!';
-  margin-bottom: 20px;
-}
-
-
 
 
 

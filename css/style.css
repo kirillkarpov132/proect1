@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Roboto!';
   }
 body{
     margin: 0px;
@@ -60,12 +61,6 @@ transform: scaleX(0);
   padding: 2px;
 }
 
-p{
-    font-family: 'Roboto!';
-}
-a{
-    font-family: 'Roboto!';
-}
 header{
  
 }

@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Roboto!';
   }
 body{
     margin: 0px;
+
 }
 
 @font-face {
@@ -56,13 +57,13 @@ transform: scaleX(0);
   transition: 0.25s;
   }
 
-.katalog{
+.praic{
   border-bottom: 2px solid #117ed8;
-  padding: 2px;   
+  padding: 2px;
 }
 
 header{
-    
+ 
 }
 .header {
     width: 100%;
@@ -70,7 +71,7 @@ header{
     background-color: #181818;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+  
   }
   .header-title {
     display: flex;
@@ -162,7 +163,7 @@ header{
     font-weight: bold;
     
   }
-  .zvonok {
+.zvonok {
     color: var(--white, #fff);
     font-family: "Roboto!";
     font-size: 13px;
@@ -170,7 +171,7 @@ header{
     border-radius: 8px;
     border: 2px solid #3c3c3c;
     padding: 12px 20px;
-  }
+}
   .zvonok:hover {
  background: #3a8b04;
  font-size: 13px;
@@ -242,187 +243,10 @@ header{
 
 
 
-
-
 .main{
-
-  max-width: 1920px;
-  margin: 0 auto ;
+  margin-bottom: 100px;
 }
 
-.shopstart{
-    color: #0A490A;
-    margin-left: 85px;
-    font-size: 30px;
-    font-weight: 700;
-}
-.tovars{
-    display: inline-flex;
-    flex-wrap: wrap;
-   margin-bottom: 100px;
-}
-.tovar1{
-    margin-top: 20px;
-    border-style:groove;
-    border-width: 2px;
-    border-color: black;
-    width: 275px;
-    height: 450px;
-    border-radius: 10px;
-    margin-left: 85px;
-    margin-right: -65px;
-}
-.tovar2{
-    border-style:groove;
-    border-width: 2px;
-    border-color: black;
-    width: 275px;
-    height: 425px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.apple{
-    width: 100%;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.fruitp, .fruitname{
-    color:#0A490A;
-    margin-left: 15px;
-}
-.fruitname{
-    font-size: 23px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: bold;
-}
-.fruitp{
-    margin-bottom: 3px;
-    font-weight: 600;
-    margin-top: -5px;
-}
-.price{
-    margin-left: 15px;
-    color: #0A490A;
-    font-size: 23px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.pricespan{
-    font-size: 16px;
-    text-decoration:line-through;
-    margin-bottom: 0;
-}
-.kg{
-    margin-top: 10px;
-    margin-left: 15px;
-    height: 25px;
-    border-radius: 7px;
-    border-width: 1px;
-}
-.kg::placeholder{
-    padding-left: 130px;
-    font-weight: 700;
-}
-
-.buttonbox{
-    margin-top: 10px;
-    margin-left: 15px;
-}
-.buttonmore{
-    height: 30px;
-    width: 255px;
-    font-size: 15px;
-    color: #0A490A;
-    background-color: #ffc107;
-    border: none;
-    border-radius: 7px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.linkmore{
-    text-decoration: none;
-}
-.buttonmore:hover{
-    background-color: gray;
-}
-
-.info{
-    color: #0A490A;
-    margin-left: 15px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-right: 15px;
-}
-.under{
-background-color: #0A490A;
-width: 100%;
-height: 400px;
-margin-top: 50px;
-}
-
-.popup{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.8);
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-.popup_body{
-    display: flex;
-    min-height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.popup_content{
-    background-color: white;
-    color: #0A490A;
-    max-width: 700px;
-    padding: 30px;
-    position: relative;
-    border-radius: 10px;
-    transition: all 0.8s ease 0s;
-    opacity: 0;
-    transform: translate(0px, -100%);
-}
-.popup_title{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-.popup_close{
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #0A490A;
-}
-.popup:target{
-    opacity: 1;
-    visibility: visible;
-}
-.popup:target .popup_content{
-    opacity: 1;
-    transform: translate(0px,0px);
-}
-.popup_area{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-.fix{
-    position: fixed;
-    opacity: 0;
-}
 
 
 

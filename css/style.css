@@ -2,10 +2,7 @@
     box-sizing: border-box;
     font-family: 'Roboto!';
   }
-body{
-    margin: 0px;
 
-}
 
 @font-face {
     font-family: 'Roboto!';
@@ -29,6 +26,9 @@ body{
     font-weight: 700;
     font-style: normal;
     }
+
+
+
 
 .nav a{
   margin-right: 30px;
@@ -65,19 +65,18 @@ header{
     width: 100%;
     height: 124px;
     background-color: #181818;
-    display: flex;
-    justify-content: center;
-  
+    display: flex; 
   }
   .header-title {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding-left: 60px;
+margin: auto;
   }
   .conteiner {
-    max-width: 1850px;
-    display: flex;
-
+    width:100%;
+    display: inline-flex;
+    flex-wrap: wrap;
   }
   .vec {
     width: 9px;
@@ -91,14 +90,16 @@ header{
   .logo {
     display: flex;
     align-items: center;
-    margin-right: 85px;
+    margin-right: 40px;
+  }
+  .logotip{
+    margin-right: 20px;
   }
   .logo-text {
     display: flex;
     align-items: center;
-    margin-left: 50px;
     justify-content: center;
-    width: 252px;
+    max-width: 252px;
     height: 38px;
   }
   .logo-text1 {
@@ -210,53 +211,46 @@ header{
   margin-right: 5px;
 }
 .kontakt{
-  width: 260px;
+  max-width: 260px;
   display: flex;
   align-items: center;
-}
-.connect{
-  width: 500px;
-  height: 50px;
+
   justify-content: center;
   padding-top:0px;
   display: flex;
   align-items: center;
 }
+
 .main{
   margin-bottom: 100px;
 }
 .fon{
     margin: auto;
-    width:1920px;
-    height: 700px;
+    width:100%;
+    min-height: 700px;
     background: rgb(250, 204, 2);
-    display: flex;
+    display: inline-flex;
+    
     position: relative;
     margin-bottom: 100px;
 }
 .info{
-    padding-left:250px ;
-    padding-top: 150px;
+    padding-left:13% ;
+    padding-top: 7%;
 }
 .info1{
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 .infotext{
     margin:0;
-font-size: 90px;
+font-size:60px;
 font-weight: 900;
 color: rgb(23, 87, 10);
-margin-right: 60px;
+
 }
-.star{
-    width: 140px;
-    height: 130px;
-    background: url(/image/Star\ 1.png) center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .skidka{
     font-size: 40px;
     color: white;
@@ -264,7 +258,7 @@ margin-right: 60px;
     
 }
 .info2{
-    width: 970px;
+    width: 51%;
 }
 .infotext2{
     font-size: 20px;
@@ -272,15 +266,16 @@ margin-right: 60px;
     margin-bottom: 50px;
 }
 .button{
-    width: 340px;
-    height: 65px;
+    max-width: 340px;
+    min-height: 65px;
     border: 0;
     border-radius: 15px;
     background: rgb(190, 200, 177);
     font-size: 25px;
     font-weight: 600;
     padding-left: 40px;
-    display: flex;
+    display:inline-flex;
+ 
 }
 .button:hover{
     cursor: pointer;
@@ -295,14 +290,7 @@ margin-right: 60px;
   position: relative;
    top: 10px;
 }
-.imgwat{
-    background: url(/image/watermelon.png);
-    width: 640px;
-    height: 480px;
-    position: absolute; 
-right: 0;
-bottom: 0;
-}
+
 .section{
   max-width: 1420px;
   margin: auto;
@@ -315,11 +303,12 @@ bottom: 0;
 }
 
 .section_info_compania_block{
-  width: 900px;
+  max-width:  900px;
   margin-right: 100px;
 }
 .section_compania_block{
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 .apple{
   width: 300px;
@@ -329,6 +318,7 @@ bottom: 0;
  font-size: 30px;
 font-family: 'Roboto!';
 margin-bottom: 40px; 
+
 }
 .card_categories_1{
   border: 2px groove black;
@@ -341,6 +331,7 @@ margin-bottom: 30px;
 .card_categories{
   display: inline-flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .card_categories_1_apple{
 width: 100%;
@@ -383,16 +374,16 @@ margin-bottom: 0px;
 
 
 .footer{
-  width: 1900px;
-  height: 300px;
+  max-width: 1900px;
+  height: 100%;
   background: #181818;
   margin: auto;
   border-radius:40px 40px 0 0 ;
   padding-top: 60px;
-  padding-left: 460px;
+  padding-left: 24%;
 }
 .kontakt_compania{
-width: 280px;
+max-width:  280px;
 height: 220px;
 margin-right: 80px;
 }
